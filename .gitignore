@@ -1,0 +1,40 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local configuration, credentials, and logs
+.env
+.env.*
+.streamlit/secrets.toml
+*.log
+*.pem
+*.key
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Source datasets: the UIT-VSFC card does not state redistribution terms
+/data/
+/dataset/
+/datasets/
+/Dataset/
+/Datasets/
+*.parquet
+/Result/test_evaluation/test_predictions.csv
+
+# Duplicate checkpoint; the app loads the copy in rnn_demo/models/
+/Result/best_model .keras
+
+# Unneeded backup archives
+*.zip
+*.7z
+*.rar

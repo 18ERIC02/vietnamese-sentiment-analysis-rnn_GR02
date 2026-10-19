@@ -1,0 +1,8 @@
+{
+    "model": "SimpleRNN + Dropout(0.3)",
+    "test_samples": 3166,
+    "test_accuracy": 0.8853442830069488,
+    "test_precision_macro": 0.802616194331215,
+    "test_recall_macro": 0.6572821869685112,
+    "test_macro_f1": 0.6691895768984107
+}
