@@ -32,6 +32,16 @@ Checkpoint dùng cho demo là [rnn_demo/models/best_model.keras](rnn_demo/models
 ```text
 Notebook/                         Notebook huấn luyện và đánh giá
 Result/                           History, biểu đồ, validation và test metrics
+desktop_app/                      Ứng dụng Desktop Native (PySide6)
+  assets/                         Logo HCMUTE, banner trường và icon trang trí
+  inference/                      Module nạp checkpoint và suy luận cảm xúc
+  models/best_model.keras         Checkpoint phục vụ ứng dụng Desktop
+  ui/                             Mã nguồn giao diện PySide6 (MainWindow, widgets, styles)
+  build.ps1                       Script tự động đóng gói Windows EXE (PyInstaller)
+  main.py                         Điểm khởi chạy ứng dụng Desktop
+  requirements.txt                Danh sách thư viện phụ thuộc cho Desktop App
+  RNN_Sentiment_HCMUTE.spec       File cấu hình đóng gói PyInstaller
+  README.md                       Hướng dẫn chi tiết về Desktop App
 rnn_demo/
   app.py                           Ứng dụng Streamlit
   assets/                          CSS và logo HCMUTE
@@ -68,6 +78,29 @@ Tại `rnn_demo`:
 ```
 
 Hoặc chạy trực tiếp bằng `.\.venv\Scripts\python.exe -m streamlit run app.py`. Mở URL localhost do Streamlit in ra. Xem thêm [hướng dẫn demo](rnn_demo/README.md).
+
+## Desktop Application (PySide6)
+
+Ứng dụng Desktop Native chạy trực tiếp trên Windows (sử dụng PySide6/Qt và TensorFlow/Keras) với giao diện Dashboard học thuật HCMUTE hiện đại, không cần mở trình duyệt web:
+
+### 1. Khởi chạy từ mã nguồn Python
+```powershell
+Set-Location .\desktop_app
+..\rnn_demo\.venv\Scripts\python.exe main.py
+```
+*(Nếu sử dụng môi trường Python riêng, cài đặt phụ thuộc qua `pip install -r requirements.txt` rồi chạy `python main.py`)*.
+
+### 2. Đóng gói thành file thực thi `.exe` độc lập trên Windows
+Ứng dụng có thể được đóng gói thành file thực thi chạy độc lập trên Windows mà không cần cài đặt Python:
+```powershell
+Set-Location .\desktop_app
+powershell -ExecutionPolicy Bypass -File .\build.ps1
+```
+File thực thi sau khi hoàn tất sẽ nằm tại:
+```text
+desktop_app\dist\RNN_Sentiment_HCMUTE\RNN_Sentiment_HCMUTE.exe
+```
+Xem thêm tài liệu chi tiết tại [desktop_app/README.md](desktop_app/README.md).
 
 ## Usage
 
