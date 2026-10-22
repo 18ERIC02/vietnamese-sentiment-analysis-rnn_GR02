@@ -121,7 +121,7 @@ class MainWindow(QMainWindow):
         self.current_inference_worker: Optional[InferenceWorker] = None
         self.load_worker: Optional[ModelLoadWorker] = None
 
-        self.setWindowTitle("Phân tích cảm xúc bình luận tiếng Việt | HCMUTE")
+        self.setWindowTitle("Phân tích cảm xúc bình luận tiếng Việt | HCM-UTE")
         self.resize(1360, 820)
         self.setMinimumSize(1080, 680)
 

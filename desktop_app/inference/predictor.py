@@ -166,7 +166,7 @@ class SentimentPredictor:
 
         started = time.perf_counter()
         try:
-            output = self.model(input_tensor, training=False)
+            output = self.model(input_tensor, training=False) #Vectorization and RNN inference
             elapsed_ms = (time.perf_counter() - started) * 1000.0
 
             probs = np.asarray(output, dtype=np.float64)

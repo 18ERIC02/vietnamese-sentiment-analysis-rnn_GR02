@@ -2,7 +2,7 @@
 
 Project:
     XÂY DỰNG HỆ THỐNG PHÂN TÍCH CẢM XÚC BÌNH LUẬN TIẾNG VIỆT BẰNG RNN
-    TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT TP. HỒ CHÍ MINH (HCMUTE)
+    TRƯỜNG ĐẠI HỌC CÔNG NGHỆ KỸ THUẬT THÀNH PHỐ HỒ CHÍ MINH (HCM-UTE)
     Môn học: Deep Learning
     Giảng viên: PGS. TS. Hoàng Văn Dũng
     Nhóm thực hiện:
@@ -59,9 +59,9 @@ def main() -> int:
         )
 
     app = QApplication(sys.argv)
-    app.setApplicationName("Phân tích cảm xúc RNN | HCMUTE")
-    app.setOrganizationName("HCMUTE")
-    app.setOrganizationDomain("hcmute.edu.vn")
+    app.setApplicationName("Phân tích cảm xúc RNN | HCM-UTE")
+    app.setOrganizationName("HCM-UTE")
+    app.setOrganizationDomain("hcm-ute.edu.vn")
 
     logo_path = APP_DIR / "assets" / "hcmute_logo.png"
     if logo_path.is_file():

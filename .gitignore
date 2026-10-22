@@ -42,4 +42,8 @@ Thumbs.db
 # Build and packaging artifacts
 build/
 dist/
+/desktop_app/build_fixed/
+/desktop_app/dist_fixed/
+/desktop_app/source_header_fixed.png
+/desktop_app/exe_header_fixed.png
 *.spec.bak

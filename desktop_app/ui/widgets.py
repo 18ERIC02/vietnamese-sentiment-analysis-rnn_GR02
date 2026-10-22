@@ -462,7 +462,7 @@ class HeaderWidget(QFrame):
         layout.setContentsMargins(28, 0, 28, 0)
         layout.setSpacing(16)
 
-        # HCMUTE Logo
+        # HCM-UTE Logo
         self.logo_label = QLabel(self)
         self.logo_label.setFixedSize(68, 68)
         self.logo_label.setScaledContents(True)
@@ -470,7 +470,7 @@ class HeaderWidget(QFrame):
         if logo_path and logo_path.is_file():
             self.logo_label.setPixmap(QPixmap(str(logo_path)))
         else:
-            self.logo_label.setText("HCMUTE")
+            self.logo_label.setText("HCM-UTE")
             self.logo_label.setStyleSheet(f"font-weight: bold; color: {COLOR_NAVY}; background: transparent;")
         layout.addWidget(self.logo_label, alignment=Qt.AlignmentFlag.AlignVCenter)
 
@@ -480,7 +480,7 @@ class HeaderWidget(QFrame):
         text_layout.setSpacing(2)
         text_layout.setAlignment(Qt.AlignmentFlag.AlignVCenter)
 
-        lbl1 = QLabel("TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT", self)
+        lbl1 = QLabel("TRƯỜNG ĐẠI HỌC CÔNG NGHỆ KỸ THUẬT", self)
         lbl1.setStyleSheet(f"font-size: 15px; font-weight: 800; color: {COLOR_NAVY}; letter-spacing: 0.5px; background: transparent;")
         text_layout.addWidget(lbl1)
 
@@ -488,7 +488,7 @@ class HeaderWidget(QFrame):
         lbl2.setStyleSheet(f"font-size: 15px; font-weight: 800; color: {COLOR_NAVY}; letter-spacing: 0.5px; background: transparent;")
         text_layout.addWidget(lbl2)
 
-        lbl3 = QLabel("HCMC University of Technology and Education", self)
+        lbl3 = QLabel("Ho Chi Minh City University of Technology and Engineering", self)
         lbl3.setStyleSheet(f"font-size: 12px; color: {COLOR_MUTED}; font-weight: 500; background: transparent;")
         text_layout.addWidget(lbl3)
 

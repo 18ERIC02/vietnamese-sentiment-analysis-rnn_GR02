@@ -2,13 +2,13 @@
 
 Ứng dụng Desktop phân tích cảm xúc bình luận tiếng Việt sử dụng mạng nơ-ron hồi quy **RNN** (Recurrent Neural Network), được xây dựng bằng **Python 3.11** và **PySide6 (Qt for Python)**.
 
-Giao diện được thiết kế hiện đại theo chuẩn Dashboard học thuật của Trường Đại học Sư phạm Kỹ thuật TP. Hồ Chí Minh (HCMUTE).
+Giao diện được thiết kế hiện đại theo chuẩn Dashboard học thuật của Trường Đại học Công nghệ Kỹ thuật Thành phố Hồ Chí Minh (HCM-UTE).
 
 ---
 
 ## 1. Thông tin đồ án
 
-- **Trường**: Trường Đại học Sư phạm Kỹ thuật TP. Hồ Chí Minh (HCMUTE)
+- **Trường**: Trường Đại học Công nghệ Kỹ thuật Thành phố Hồ Chí Minh (HCM-UTE)
 - **Học phần**: Deep Learning
 - **Giảng viên hướng dẫn**: PGS. TS. Hoàng Văn Dũng
 - **Nhóm thực hiện (Nhóm 02)**:
@@ -106,3 +106,5 @@ desktop_app/
    ```
 
 Chỉ cần double-click file `.exe` để mở ứng dụng Desktop.
+
+**Lưu ý:** bản EXE đã kiểm thử nằm trên máy phát triển tại `desktop_app\dist_fixed\RNN_Sentiment_HCMUTE\RNN_Sentiment_HCMUTE.exe`, không được đưa vào GitHub vì là thư mục build lớn. Người tải repository cần chạy từ mã nguồn hoặc tự đóng gói theo hướng dẫn trên. Script `build.ps1` mặc định dọn `build`/`dist` trước khi đóng gói lại; sao lưu bản EXE cũ nếu cần giữ lại.
